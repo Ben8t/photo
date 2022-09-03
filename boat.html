@@ -74,7 +74,16 @@
 
         #bar {
           font-family: aboreto;
+          position: fixed;
         }
+
+        @media screen and (max-width: 1000px) {
+          #bar {
+          font-family: aboreto;
+          position: relative;
+        }
+        }
+
 
         a, a:hover, a:focus, a:active {
               text-decoration: none;
@@ -90,7 +99,7 @@
 <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3" style="position:fixed" id="bar">
+        <div class="col-sm-3" id="bar">
           <h2 id="name"><a href="index.html">Benoit Pimpaud</a></h2>
           <p class="links"><a href="angle.html">Angle</a></p>
           <p class="links"><a href="boat.html">Boat</a></p>
